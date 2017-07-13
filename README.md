@@ -1,11 +1,9 @@
-# Modular Domain Driver Laravel Structure Constructor
+# Modular Laravel Structure Constructor
 
-**Use 0.1 for Laravel ~5.2 compatibility**
-
-Some service providers to enable a Laravel project structure that is grouped by components rather than class types.
+Some service providers to enable a Laravel design framework that is grouped by components, rather than class types, by implementing the domain drive pattern.
 
 ## Installation
 
 ```bash
-composer require diegovilarinho/modular-laravel 0.1
+composer require diegovilarinho/modular-laravel 0.1.*
 ```
