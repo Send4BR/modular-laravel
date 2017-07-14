@@ -61,6 +61,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $config = $this->app['config']['modular.components'];
 
+        $prefix = $config['prefix'];
         $middleware = $config['protection_middleware'];
         $middlewareClientCredentials = $config['client_credentials_middleware'];
 
@@ -97,6 +98,7 @@ class RouteServiceProvider extends ServiceProvider
 
                     $router->group([
                         'middleware' => $protected ? $middleware : [],
+                        'prefix' => $prefix,
                         'namespace'  => $namespace,
                     ], function ($router) use ($path) {
                         require $path;
@@ -112,6 +114,7 @@ class RouteServiceProvider extends ServiceProvider
 
                     $router->group([
                         'middleware' => $protected ? $middlewareClientCredentials : [],
+                        'prefix' => $prefix,
                         'namespace'  => $namespace,
                     ], function ($router) use ($path) {
                         require $path;
