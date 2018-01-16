@@ -5,5 +5,5 @@ Some service providers to enable a Laravel design framework that is grouped by c
 ## Installation
 
 ```bash
-composer require diegovilarinho/modular-laravel 0.2.*
+composer require send4store/modular-laravel
 ```

@@ -1,5 +1,5 @@
 {
-    "name": "diegovilarinho/modular-laravel",
+    "name": "send4store/modular-laravel",
     "autoload": {
         "psr-4": {
             "Modular\\Api\\System\\": "src/"
